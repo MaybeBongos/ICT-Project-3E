@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: radial-gradient(circle at center, #120016, #050008 70%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Black hole swirl */
+.blackhole {
+    position: absolute;
+    width: 1200px;
+    height: 1200px;
+    background: conic-gradient(
+        from 0deg,
+        #b300ff,
+        #6a00ff,
+        #2d003a,
+        #000000,
+        #2d003a,
+        #6a00ff,
+        #b300ff
+    );
+    border-radius: 50%;
+    animation: spin 18s linear infinite;
+    filter: blur(60px);
+    opacity: 0.7;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Login card */
+.login-container {
+    position: relative;
+    background: rgba(20, 0, 30, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 0 40px rgba(180, 0, 255, 0.4);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #e6b3ff;
+}
+
+/* Inputs */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #140018;
+    border: 1px solid #6a00ff;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+}
+
+.login-container input::placeholder {
+    color: #b88cff;
+}
+
+.login-container input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #9f00ff;
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #9f00ff, #4b0082);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-container button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #b300ff;
+}
