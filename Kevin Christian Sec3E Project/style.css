@@ -1,0 +1,117 @@
+/* Reset dan dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #87ceeb 0%, #b0e0ff 100%);
+  overflow-x: hidden;
+  color: #333;
+}
+
+.container {
+  max-width: 720px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 80, 0.1);
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2.8rem;
+  color: #034078;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+/* Foto Profil */
+.photo-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #7ec8ff;
+  box-shadow: 0 6px 15px rgba(0, 80, 200, 0.3);
+  object-fit: cover;
+}
+
+/* Section Titles */
+section h2 {
+  color: #034078;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #7ec8ff;
+  padding-bottom: 6px;
+  font-size: 1.6rem;
+}
+
+/* Biodata */
+.biodata-section p {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Riwayat Sekolah */
+.education-section ul {
+  list-style-type: none;
+  padding-left: 12px;
+}
+
+.education-section ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  padding-left: 10px;
+  position: relative;
+  color: #1b2a49;
+}
+
+.education-section ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #3a86ff;
+  font-weight: bold;
+}
+
+/* Skill */
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-list li {
+  background-color: #7ec8ff;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0, 65, 150, 0.3);
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
+.skills-list li:hover {
+  background-color: #034078;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #034078;
+  font-size: 0.9rem;
+}
